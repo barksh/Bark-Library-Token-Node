@@ -1,0 +1,41 @@
+{
+  "name": "@barksh/token-node",
+  "version": "1.0.0",
+  "description": "Node Token Library for Bark",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BarkSH/Bark-Library-Token-Node.git"
+  },
+  "author": "WMXPY",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BarkSH/Bark-Library-Token-Node/issues"
+  },
+  "homepage": "https://github.com/BarkSH/Bark-Library-Token-Node#readme",
+  "peerDependencies": {
+    "@barksh/authentication-types": "*"
+  },
+  "dependencies": {
+    "@sudoo/jwt": "^3.1.0",
+    "connor": "^2.8.0"
+  },
+  "devDependencies": {
+    "@barksh/authentication-types": "^1.0.0",
+    "@sudoo/triforce": "^3.10.1"
+  },
+  "nyc": {
+    "extension": [
+      ".ts"
+    ],
+    "include": [
+      "src/**/*.ts"
+    ],
+    "instrument": true,
+    "reporter": [
+      "json",
+      "text-summary"
+    ],
+    "report-dir": "coverage",
+    "sourceMap": true
+  }
+}
