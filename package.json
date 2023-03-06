@@ -16,7 +16,7 @@
     "@barksh/authentication-types": "*"
   },
   "dependencies": {
-    "@sudoo/jwt": "^3.1.0",
+    "@sudoo/jwt": "^3.5.0",
     "connor": "^2.8.0"
   },
   "devDependencies": {
