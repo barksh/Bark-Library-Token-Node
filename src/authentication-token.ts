@@ -60,9 +60,20 @@ export class BarkAuthenticationToken {
         return this._parsedToken;
     }
 
+    public verifySignature(publicKey: string): boolean {
+        return this._parsedToken.verifySignature(publicKey);
+    }
+    public verifyNotBefore(currentTime: Date = new Date()): boolean {
+        return this._parsedToken.verifyNotBefore(currentTime);
+    }
+    public verifyIssueDate(currentTime: Date = new Date()): boolean {
+        return this._parsedToken.verifyIssueDate(currentTime);
+    }
     public verifyExpiration(currentDate: Date = new Date()): boolean {
-
         return this._parsedToken.verifyExpiration(currentDate);
+    }
+    public verifyTime(currentDate: Date = new Date()): boolean {
+        return this._parsedToken.verifyTime(currentDate);
     }
 
     public getSelfDomain(): string {
