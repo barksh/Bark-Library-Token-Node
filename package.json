@@ -1,6 +1,6 @@
 {
   "name": "@barksh/token-node",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Node Token Library for Bark",
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@barksh/authentication-types": "^1.0.0",
-    "@sudoo/triforce": "^3.10.1"
+    "@sudoo/triforce": "^3.11.0"
   },
   "nyc": {
     "extension": [
